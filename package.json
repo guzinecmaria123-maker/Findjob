@@ -1,0 +1,24 @@
+{
+  "name": "findjob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "findjob.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guzinecmaria123-maker/Findjob.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/guzinecmaria123-maker/Findjob/issues"
+  },
+  "homepage": "https://github.com/guzinecmaria123-maker/Findjob#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.nav-link {
+    background-color: #aaccff;
+}
+
+.btn-primary,.btn-success {
+  --bs-btn-bg: #ff85e0;
+  --bs-btn-border-color: #ff85e0;
+  --bs-btn-hover-bg: #ff04c0;
+  --bs-btn-hover-border-color: #ff04c0;
+  --bs-btn-active-bg: #ff04c0;
+  --bs-btn-active-border-color: #ff04c0;
+}
+
 header,
 .hero,
 .categories,
@@ -296,7 +309,7 @@ p {
 }
 .vacancies-title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     color: #333333;
     padding-left: 130px;
 }

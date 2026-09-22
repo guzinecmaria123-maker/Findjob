@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/guzinecmaria123-maker/Findjob#readme",
   "devDependencies": {
+    "nodemon": "^3.1.14",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
   }
 }

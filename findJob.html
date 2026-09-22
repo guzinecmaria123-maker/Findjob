@@ -1,214 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="findJob.css">
-    <link rel="stylesheet" href="findjob.js">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindJob</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="findJob.css" />
+    <link rel="stylesheet" href="findjob.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
     <script src="findjob.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <span class="nav-logo">FindJob</span>
-            <div class="nav-center">
-                <a href="" class="nav-text">Поиск работы</a>
-                <a href="" class="nav-text">Поиск стартапов</a>
-            </div>
-            <div class="nav-right">
-                <a href="" class="nav-reg">Регистрация</a>
-                <button class="btn-login">Вход</button>
-            </div>
-        </nav>
+      <nav>
+        <span class="nav-logo">FindJob</span>
+        <div class="nav-center">
+          <a href="" class="nav-text">Поиск работы</a>
+          <a href="" class="nav-text">Поиск стартапов</a>
+        </div>
+        <div class="nav-right">
+          <a
+            href="#"
+            class="nav-reg"
+            data-bs-toggle="modal"
+            data-bs-target="#authModal"
+            data-bs-tab="register"
+            >Регистрация</a
+          >
+          <button
+            class="btn-login"
+            data-bs-toggle="modal"
+            data-bs-target="#authModal"
+            data-bs-tab="login"
+          >
+            Вход
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="hero">
         <div class="hero-text">
-            <h1>Один клик <br> и работа в кармане</h1>
-    <form action="" class="job-search">
-        <div class="search-field">
-            <input type="text" id="job-query" placeholder="Должность или компания" class="hero-search hero-search-left">
+          <h1>
+            Один клик <br />
+            и работа в кармане
+          </h1>
+          <form action="" class="job-search">
+            <div class="search-field">
+              <input
+                type="text"
+                id="job-query"
+                placeholder="Должность или компания"
+                class="hero-search hero-search-left"
+              />
+            </div>
+            <div class="search-field">
+              <input
+                type="text"
+                id="location-query"
+                placeholder="Город, страна"
+                class="hero-search"
+              />
+            </div>
+            <button class="hero-btn">Искать</button>
+          </form>
         </div>
-        <div class="search-field">
-            <input type="text" id="location-query" placeholder="Город, страна" class="hero-search">
-        </div>
-        <button class="hero-btn">Искать</button>
-    </form>
-        </div>
-    <img src="img/hero.png" alt="">
+        <img src="img/hero.png" alt="" />
       </section>
       <section class="logos">
         <h2 class="logos-text">Помогаем найти работу:</h2>
         <div class="brands-logos">
-            <img src="img/CocaCola.svg" alt="">
-            <img src="img/Microsoft.svg" alt="">
-            <img src="img/Google.svg" alt="">
-            <img src="img/Samsung.svg" alt="">
+          <img src="img/CocaCola.svg" alt="" />
+          <img src="img/Microsoft.svg" alt="" />
+          <img src="img/Google.svg" alt="" />
+          <img src="img/Samsung.svg" alt="" />
         </div>
       </section>
       <section class="categories">
-        <h2 class="categories-text">Работа <br> по категориям</h2>
+        <h2 class="categories-text">
+          Работа <br />
+          по категориям
+        </h2>
         <div class="category-grid-top">
-        <div class="category-card">
+          <div class="category-card">
             <i class="fi fi-rr-truck-side category-icon"></i>
             <p>Грузоперевозки</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-hand-holding-usd category-icon"></i>
             <p>Финансы</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-restaurant category-icon"></i>
-            <p>Ресторанный <br> бизнес</p>
-        </div>
-        <div class="category-card">
+            <p>
+              Ресторанный <br />
+              бизнес
+            </p>
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-pharmacy category-icon"></i>
             <p>Медицина</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-speaker category-icon"></i>
             <p>Мультимедия</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-swatchbook category-icon"></i>
             <p>Дизайн</p>
-        </div>
+          </div>
         </div>
         <div class="category-grid-bottom">
-        <div class="category-card">
+          <div class="category-card">
             <i class="fi fi-rr-display-code category-icon"></i>
             <p>Разработка</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-user-headset category-icon"></i>
-            <p>Служба <br> поддержки</p>
-        </div>
-        <div class="category-card">
+            <p>
+              Служба <br />
+              поддержки
+            </p>
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-memo-circle-check category-icon"></i>
             <p>Менеджмент</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-badge-dollar category-icon"></i>
             <p>Продажи</p>
-        </div>
-        <div class="category-card">
+          </div>
+          <div class="category-card">
             <i class="fi fi-rr-city category-icon"></i>
             <p>Офис</p>
-        </div>
-        <div class="category-card other">
+          </div>
+          <div class="category-card other">
             <i class="fi fi-rr-right category-icon"></i>
-            <p>Больше <br> категорий</p>
-        </div>
+            <p>
+              Больше <br />
+              категорий
+            </p>
+          </div>
         </div>
       </section>
       <section class="vacancies">
         <h2 class="vacancies-title">Новые вакансии</h2>
-        <span class="vacancies-subtitle">Найди работу своей мечты прямо сейчас</p>
+        <span class="vacancies-subtitle"
+          >Найди работу своей мечты прямо сейчас</span
+        >
         <div class="vacancy-grid">
-            <div class="vacancy-card-top">
+          <div class="vacancy-card-top">
             <article class="vacancy-card-first">
-                <div class="vacancy-title-first">
-                    <span class="tag-dot-first"></span>
-                    <span class="vacancy-tag">Финансы</span>
-                </div>
-                <h3 class="h3-first">Менеджер по <br> управлению финансами <br> в крупной компании</h3>
-                <p>Улан-Удэ, Россия</p>
-                <div class="vacancy-company">
-                    <img src="img/Microsoftmini.svg" alt="">
-                    <span class="vacancy-time">5 дней назад</span>
-                </div>
+              <div class="vacancy-title-first">
+                <span class="tag-dot-first"></span>
+                <span class="vacancy-tag">Финансы</span>
+              </div>
+              <h3 class="h3-first">
+                Менеджер по <br />
+                управлению финансами <br />
+                в крупной компании
+              </h3>
+              <p>Улан-Удэ, Россия</p>
+              <div class="vacancy-company">
+                <img src="img/Microsoftmini.svg" alt="" />
+                <span class="vacancy-time">5 дней назад</span>
+              </div>
             </article>
             <article class="vacancy-card">
-                <div class="vacancy-title">
-                       <span class="tag-dot"></span>
-                       <span class="vacancy-tag">Грузоперевозки</span>
-                </div>
-                <h3>Водитель на дальние <br> расстояния</h3>
-                <p>Варшава, Польша</p>
-                <div class="vacancy-company">
-                    <img src="img/Netflix.svg" alt="">
-                    <span class="vacancy-time">Вчера</span>
-                </div>
+              <div class="vacancy-title">
+                <span class="tag-dot"></span>
+                <span class="vacancy-tag">Грузоперевозки</span>
+              </div>
+              <h3>
+                Водитель на дальние <br />
+                расстояния
+              </h3>
+              <p>Варшава, Польша</p>
+              <div class="vacancy-company">
+                <img src="img/Netflix.svg" alt="" />
+                <span class="vacancy-time">Вчера</span>
+              </div>
             </article>
-               <article class="vacancy-card">
-                <div class="vacancy-title">
-                      <span class="tag-dot"></span>
-                      <span class="vacancy-tag">Грузоперевозки</span>
-                </div>
-                <h3>Водитель на дальние <br> расстояния</h3>
-                <p>Варшава, Польша</p>
-                <div class="vacancy-company">
-                    <img src="img/Netflix.svg" alt="">
-                    <span class="vacancy-time">Вчера</span>
-                </div>
-            </article>
-            </div>
-            <div class="vacancy-card-bottom">
             <article class="vacancy-card">
-                <div class="vacancy-title">
-                       <span class="tag-dot"></span>
-                       <span class="vacancy-tag">Грузоперевозки</span>
-                </div>
-                <h3>Водитель на дальние <br> расстояния</h3>
-                <p>Варшава, Польша</p>
-                <div class="vacancy-company">
-                    <img src="img/Netflix.svg" alt="">
-                    <span class="vacancy-time">Вчера</span>
-                </div>
+              <div class="vacancy-title">
+                <span class="tag-dot"></span>
+                <span class="vacancy-tag">Грузоперевозки</span>
+              </div>
+              <h3>
+                Водитель на дальние <br />
+                расстояния
+              </h3>
+              <p>Варшава, Польша</p>
+              <div class="vacancy-company">
+                <img src="img/Netflix.svg" alt="" />
+                <span class="vacancy-time">Вчера</span>
+              </div>
             </article>
-                <article class="vacancy-card">
-                    <div class="vacancy-title">
-                        <span class="tag-dot"></span>
-                        <span class="vacancy-tag">Грузоперевозки</span>
-                    </div>
-                <h3>Водитель на дальние <br> расстояния</h3>
-                <p>Варшава, Польша</p>
-                <div class="vacancy-company">
-                    <img src="img/Netflix.svg" alt="">
-                    <span class="vacancy-time">Вчера</span>
-                </div>
+          </div>
+          <div class="vacancy-card-bottom">
+            <article class="vacancy-card">
+              <div class="vacancy-title">
+                <span class="tag-dot"></span>
+                <span class="vacancy-tag">Грузоперевозки</span>
+              </div>
+              <h3>
+                Водитель на дальние <br />
+                расстояния
+              </h3>
+              <p>Варшава, Польша</p>
+              <div class="vacancy-company">
+                <img src="img/Netflix.svg" alt="" />
+                <span class="vacancy-time">Вчера</span>
+              </div>
             </article>
-                <article class="vacancy-card">
-                    <div class="vacancy-title">
-                        <span class="tag-dot"></span>
-                        <span class="vacancy-tag">Грузоперевозки</span>
-                    </div>
-                <h3>Водитель на дальние <br> расстояния</h3>
-                <p>Варшава, Польша</p>
-                <div class="vacancy-company">
-                    <img src="img/Netflix.svg" alt="">
-                    <span class="vacancy-time">Вчера</span>
-                </div>
+            <article class="vacancy-card">
+              <div class="vacancy-title">
+                <span class="tag-dot"></span>
+                <span class="vacancy-tag">Грузоперевозки</span>
+              </div>
+              <h3>
+                Водитель на дальние <br />
+                расстояния
+              </h3>
+              <p>Варшава, Польша</p>
+              <div class="vacancy-company">
+                <img src="img/Netflix.svg" alt="" />
+                <span class="vacancy-time">Вчера</span>
+              </div>
             </article>
-            </div>
+            <article class="vacancy-card">
+              <div class="vacancy-title">
+                <span class="tag-dot"></span>
+                <span class="vacancy-tag">Грузоперевозки</span>
+              </div>
+              <h3>
+                Водитель на дальние <br />
+                расстояния
+              </h3>
+              <p>Варшава, Польша</p>
+              <div class="vacancy-company">
+                <img src="img/Netflix.svg" alt="" />
+                <span class="vacancy-time">Вчера</span>
+              </div>
+            </article>
+          </div>
         </div>
         <div class="btn-flex">
-            <button class="vacancies-btn">Все вакансии</button>
+          <button class="vacancies-btn">Все вакансии</button>
         </div>
       </section>
     </main>
     <footer>
-        <span class="footer-logo">FindJob</span>
-        <div class="footer-text">
-            <a href="" class="footer-text">Главная</a>
-            <a href="" class="footer-text">О нас</a>
-            <a href="" class="footer-text">Поиск работы</a>
-            <a href="" class="footer-text">Поиск стартапов</a>
-            <a href="" class="footer-text">Вакансии</a>
-            <a href="" class="footer-text">Категории</a>
-            <a href="" class="footer-text">Контакты</a>
+      <span class="footer-logo">FindJob</span>
+      <div class="footer-text">
+        <a href="" class="footer-text">Главная</a>
+        <a href="" class="footer-text">О нас</a>
+        <a href="" class="footer-text">Поиск работы</a>
+        <a href="" class="footer-text">Поиск стартапов</a>
+        <a href="" class="footer-text">Вакансии</a>
+        <a href="" class="footer-text">Категории</a>
+        <a href="" class="footer-text">Контакты</a>
+      </div>
+      <hr />
+      <div class="footer-icon">
+        <p class="copyright">
+        <span id="year">© FindJob. Все права защищены.</span>
+        </p>
+        <div class="footer-icons">
+          <i class="fi fi-brands-whatsapp"></i>
+          <i class="fi fi-brands-vk"></i>
+          <i class="fi fi-brands-telegram"></i>
         </div>
-        <hr>
-        <div class="footer-icon">
-        <p class="copyright">©<span id="year"></span>FindJob. Все права защищены.</p>
-         <div class="footer-icons">
-        <i class="fi fi-brands-whatsapp"></i>
-        <i class="fi fi-brands-vk"></i>
-        <i class="fi fi-brands-telegram"></i>
-         </div>
-        </div>
+      </div>
     </footer>
-</body>
+    <div class="modal fade" id="authModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Аккаунт</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-pills nav-fill gap-3 mb-3">
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  id="login-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#login-pane"
+                >
+                  Вход
+                </button>
+              </li> 
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  id="register-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#register-pane"
+                >
+                  Регистрация
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade" id="login-pane">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Имя пользователя</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Войти
+                  </button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="register-pane">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Имя пользователя</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Повторите пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <button type="submit" class="btn btn-success w-100">
+                    Зарегистрироваться
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

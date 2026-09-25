@@ -318,19 +318,20 @@
 
             <div class="tab-content">
               <div class="tab-pane fade" id="login-pane">
-                <form>
+                <form id="login-form">
                   <div class="mb-3">
                     <label class="form-label">Имя пользователя</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" id="login-username" />
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Пароль</label>
-                    <input type="password" class="form-control" />
+                    <input type="password" class="form-control" id="login-password" />
                   </div>
                   <button type="submit" class="btn btn-primary w-100">
                     Войти
                   </button>
                 </form>
+                <p id="login-message"></p>
               </div>
               <div class="tab-pane fade" id="register-pane">
                 <form id="register-form">
@@ -350,6 +351,7 @@
                     Зарегистрироваться
                   </button>
                 </form>
+                <p id="register-message"></p>
               </div>
             </div>
           </div>
